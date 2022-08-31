@@ -1,4 +1,6 @@
+import 'package:ecommerce/constant/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 // import 'package:provider/provider.dart';
 
 import 'Laptob.dart';
@@ -20,7 +22,7 @@ class _welcameState extends State<welcame> {
           backgroundColor: Colors.black,
         ),
         body: Container(
-          color: Color.fromARGB(255, 206, 199, 179),
+          color: backgroundColor,
           child: Column(
             children: [
               SizedBox(
@@ -57,10 +59,11 @@ class _welcameState extends State<welcame> {
                 child: Text(
                   textAlign: TextAlign.start,
                   "Order online \n collect in store",
-                  style: TextStyle(
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black),
+                  style: GoogleFonts.raleway(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 25,
+                  ),
                 ),
               ),
               SizedBox(
@@ -79,8 +82,9 @@ class _welcameState extends State<welcame> {
                           return Builder(builder: (context) {
                             return ElevatedButton(
                                 style: ElevatedButton.styleFrom(
-                                    primary: Color.fromARGB(255, 206, 199, 179),
-                                    onPrimary: Colors.black),
+                                    primary: backgroundColor,
+                                    onPrimary: Colors.black,
+                                    elevation: 0),
                                 onPressed: () {
                                   Navigator.of(context).pop();
                                 },
@@ -93,8 +97,9 @@ class _welcameState extends State<welcame> {
                       child: Builder(builder: (context) {
                         return ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                                primary: Color.fromARGB(255, 206, 199, 179),
-                                onPrimary: Colors.black),
+                                primary: backgroundColor,
+                                onPrimary: Colors.black,
+                                elevation: 0),
                             onPressed: () {
                               Navigator.of(context).push(MaterialPageRoute(
                                 builder: (context) {
@@ -110,8 +115,9 @@ class _welcameState extends State<welcame> {
                       padding: EdgeInsets.only(right: 10),
                       child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                              primary: Color.fromARGB(255, 206, 199, 179),
-                              onPrimary: Colors.black),
+                              primary: backgroundColor,
+                              onPrimary: Colors.black,
+                              elevation: 0),
                           onPressed: () {},
                           child: Text("Phones")),
                       width: 100,
@@ -119,8 +125,9 @@ class _welcameState extends State<welcame> {
                     Container(
                       child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                              primary: Color.fromARGB(255, 206, 199, 179),
-                              onPrimary: Colors.black),
+                              primary: backgroundColor,
+                              onPrimary: Colors.black,
+                              elevation: 0),
                           onPressed: () {},
                           child: Text("Drones")),
                       width: 100,

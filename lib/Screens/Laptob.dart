@@ -1,5 +1,7 @@
 import 'package:ecommerce/Screens/home.dart';
+import 'package:ecommerce/constant/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 // import 'package:provider/provider.dart';
 
 class Laptob extends StatefulWidget {
@@ -20,7 +22,7 @@ class _LaptobState extends State<Laptob> {
           ),
           body: SingleChildScrollView(
             child: Container(
-              color: Color.fromARGB(255, 206, 199, 179),
+              color: backgroundColor,
               child: Column(
                 children: [
                   SizedBox(
@@ -57,10 +59,11 @@ class _LaptobState extends State<Laptob> {
                     child: Text(
                       textAlign: TextAlign.start,
                       "Order online \n collect in store",
-                      style: TextStyle(
-                          fontSize: 25,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black),
+                      style: GoogleFonts.raleway(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 25,
+                  ),
                     ),
                   ),
                   SizedBox(
@@ -78,9 +81,10 @@ class _LaptobState extends State<Laptob> {
                             child: Builder(builder: (context) {
                               return ElevatedButton(
                                   style: ElevatedButton.styleFrom(
-                                      primary:
-                                          Color.fromARGB(255, 206, 199, 179),
-                                      onPrimary: Colors.black),
+                                    primary: backgroundColor,
+                                    onPrimary: Colors.black,
+                                    elevation: 0,
+                                  ),
                                   onPressed: () {
                                     Navigator.of(context)
                                         .push(MaterialPageRoute(
@@ -96,8 +100,10 @@ class _LaptobState extends State<Laptob> {
                           padding: EdgeInsets.only(right: 10),
                           child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
-                                  primary: Color.fromARGB(255, 206, 199, 179),
-                                  onPrimary: Colors.black),
+                                primary: backgroundColor,
+                                onPrimary: Colors.black,
+                                elevation: 0,
+                              ),
                               onPressed: () {},
                               child: Text("Laotops")),
                           width: 100,
@@ -106,8 +112,10 @@ class _LaptobState extends State<Laptob> {
                           padding: EdgeInsets.only(right: 10),
                           child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
-                                  primary: Color.fromARGB(255, 206, 199, 179),
-                                  onPrimary: Colors.black),
+                                primary: backgroundColor,
+                                onPrimary: Colors.black,
+                                elevation: 0,
+                              ),
                               onPressed: () {},
                               child: Text("Phones")),
                           width: 100,
@@ -115,8 +123,10 @@ class _LaptobState extends State<Laptob> {
                         Container(
                           child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
-                                  primary: Color.fromARGB(255, 206, 199, 179),
-                                  onPrimary: Colors.black),
+                                primary: backgroundColor,
+                                onPrimary: Colors.black,
+                                elevation: 0,
+                              ),
                               onPressed: () {},
                               child: Text("Drones")),
                           width: 100,
