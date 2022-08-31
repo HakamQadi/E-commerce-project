@@ -1,5 +1,6 @@
 // ignore_for_file: deprecated_member_use
 
+import 'package:ecommerce/Screens/home.dart';
 import 'package:ecommerce/constant/colors.dart';
 import 'package:ecommerce/constant/icons.dart';
 import 'package:ecommerce/constant/text_style.dart';
@@ -121,16 +122,14 @@ class _LoginState extends State<Login> {
                             ),
                             suffix: TextButton(
                               onPressed: () {
-                               
-                                  setState(() {
-                                    showPass = !showPass;
-                                    if (show == "Show") {
-                                      show = "Hide";
-                                    } else {
-                                      show = "Show";
-                                    }
-                                  });
-                              
+                                setState(() {
+                                  showPass = !showPass;
+                                  if (show == "Show") {
+                                    show = "Hide";
+                                  } else {
+                                    show = "Show";
+                                  }
+                                });
                               },
                               child: Text(
                                 show,
@@ -147,9 +146,7 @@ class _LoginState extends State<Login> {
                     Padding(
                       padding: const EdgeInsets.only(right: 190),
                       child: TextButton(
-                        onPressed: () {
-                           
-                        },
+                        onPressed: () {},
                         child: Text(
                           "Forgot password?",
                           style: GoogleFonts.raleway(
@@ -159,7 +156,9 @@ class _LoginState extends State<Login> {
                         ),
                       ),
                     ),
-                    SizedBox(height: 40,),
+                    SizedBox(
+                      height: 40,
+                    ),
                     Container(
                       width: 320,
                       height: 60,
@@ -171,8 +170,10 @@ class _LoginState extends State<Login> {
                         ),
                         color: Color.fromARGB(255, 89, 86, 233),
                         onPressed: () {
-                          // Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          //     builder: (BuildContext context) => Login()));
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      welcame()));
                         },
                         child: Text(
                           "Login",
@@ -185,9 +186,7 @@ class _LoginState extends State<Login> {
                       ),
                     ),
                     TextButton(
-                      onPressed: () {
-                         
-                      },
+                      onPressed: () {},
                       child: Text(
                         "Create account",
                         style: GoogleFonts.raleway(
