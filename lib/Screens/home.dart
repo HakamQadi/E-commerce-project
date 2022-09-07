@@ -81,9 +81,7 @@ class _welcameState extends State<welcame> {
                                 style: ElevatedButton.styleFrom(
                                     primary: Color.fromARGB(255, 206, 199, 179),
                                     onPrimary: Colors.black),
-                                onPressed: () {
-                                  Navigator.of(context).pop();
-                                },
+                                onPressed: () {},
                                 child: Text("Wearable"));
                           });
                         }),
